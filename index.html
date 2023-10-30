@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¡Cotiza! - Servicio 24/7 </title>
+    <link rel="stylesheet" href="./asset/css/estilos.css">
+    <script type="text/javascript" src="./asset/js/java.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+
+        <div class="inicio">
+        <div class="in">
+            <h1> ¡Haz tu Cotizaci&oacute;n!</h1>
+            <h2>Pregunta sin compromiso! </h2>
+        </div>
+            <div class="soli">
+                <h2>Solicitud de Cotizaci&oacute;n</h2>
+            </div>
+        </div>
+
+        <form  name="form" onsubmit="return false;">
+            <br>
+            <label class="label" name="nombre">Nombre Completo*</label>
+            <br>
+                <input class="input" type="text" id="nombreC" placeholder="Ejemplo: Juan P&eacute;rez" >
+
+<br><br>
+            <div> <label class="label" name="nombProduct">Nombre del Producto*</label> <br>
+                <select name="nombProduct" id="NomProd" class="new" >
+                        <option value="">Selecciona el modelo de celular</option>
+                        <option value="A1">Apple Iphone 14 Pro Max</option>
+                        <option value="AS">Apple Iphone 14 Plus</option>
+                        <option value="S3">Samsung S23 Ultra</option>
+                        <option value="SA">Samsung A23</option>
+                        <option value="Xio">Xiaomi MI 12T</option>
+                        <option value="Xia">Xiaomi Note 11 Pro</option>
+                        <option value="Ho">Honor X7</option>
+                        <option value="HON">Honor 70</option>
+                        <option value="Hu">Huawei Mate 50 pro</option>
+                        <option value="Hua">Huawei Nova Y90</option>
+                        <option value="REA">Realme 9I</option>
+                        <option value="RE">Realme Xt</option>
+                    </select>
+            </div>
+<br><br>  
+
+                <div class="orden1"><label class="label" for="">Cantidad*</label>
+                    <br>
+                    <input class="input" type="number" id="cantidad" placeholder="3" min="1" max="10">
+                </div>
+
+                <div class="orden3"><label class="label" for="">Precio c/u*</label>
+                    <br>
+                    <input class="input" type="number" step="any" id="precioU" placeholder="250.99" min="100" >
+                </div>               
+            <br><br> <br><br> <br>
+            
+            <div class="submit">
+                <input type="submit" value="Enviar Datos"  onclick="Solicitud();"/>
+            </div>
+            <p id="parrafo">
+                <div id="resu"></div>
+
+            </p>
+        </form>
+<br>
+    </div>
+</body>
+</html>
